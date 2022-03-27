@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Thumbail page</title>
+		<link rel="stylesheet" href="WebDesign_Thumbnail_page.css">
+        <link rel="stylesheet" href="navstylesheet.css">
+		<script src="main.js"></script>
+
+
+        <style>
+            .content-area{
+                z-index: 2;
+            }
+            .img_containerTP{
+                z-index: -2;
+            }
+            .footer{
+                z-index: 3;
+            }
+            .navarea{
+                z-index: 3;
+            }
+        </style>
+		
+	</head>
+    <body>
+        <nav class="navarea">
+            <div class="navimage">   <!--logo pic-->
+                    <img src="2.png" alt="LOGO">
+            </div>		
+                    
+                            
+                <ul>
+                    <li><a href="https://w1809936.users.ecs.westminster.ac.uk/navbar.html">Home</a></li>
+                    <li><a href="https://w1809852.users.ecs.westminster.ac.uk/public_html/public_html/shop.html">Shop</a></li>
+                    <li><a href="https://w1809851.users.ecs.westminster.ac.uk/WebDesign_Thumbnail_page.html">Thumbnails</a></li>
+                    <li><a href="https://w1809748.users.ecs.westminster.ac.uk/Quiz%20Intro.html">Quiz</a></li>
+                    <li><a href="https://w1809851.users.ecs.westminster.ac.uk/WebDesign_Sitemap_page.html">Diagram</a></li>
+                    <li><a href="https://w1809936.users.ecs.westminster.ac.uk/query.html">Query</a></li> <!--query pg link-->
+                    <li><a href="https://w1809748.users.ecs.westminster.ac.uk/Student_Details.html">About Us</a></li>
+                        
+                    
+                        
+                    
+                </ul>
+            </nav>	
+            
+            <div class="img_containerTP">
+                <div class="inner">
+                    <h1><b>THUMBNAILS</b></h1>
+                    <p>TO TRAVEL IS TO LIVE....</p>
+                </div>
+            </div>
+            <div id="body" class ="content-area">
+                
+                    <div style="text-align: left; background:#262626; color:white; position: relative; font-family: poppins; width:1489px; padding:15px;">
+                        <label for="colours">Background Colour: </label>
+    
+                        <select onchange="changeColour();" name="colours" id="colours">
+    
+                            <option value="#ebebeb">Default</option>
+                            <option value="Black">Black</option>
+                            <option value="LightSteelBlue">Light Blue</option>
+                            
+                        </select>
+        
+                        <label for="font">Font Colour: </label>
+        
+                        <select onchange="changeFontColour();" name="font" id="font">
+                            <option value="Black">Default</option>
+                            <option value="White">White</option>
+                            <option value="DarkSlateBlue">Dark Blue</option>
+                            
+                        </select>
+                    </div>
+                    
+    
+                    <br><br>
+                    <h2 style="text-align: center;">Some travel destinations for you to check out</h2>
+                    <br><br><br><br>
+                    
+                    <div class="thumbnail">
+                        <ul>
+                            <li onclick="collapse('img-1');"><img src="temple.jpg" alt="" width="300" height="200" ></li>
+                            <li onclick="collapse('img-2');"><img src="eiffel.jpg" alt="" width="300" height="200"></li>
+                            <li onclick="collapse('img-3');"><img src="louvre.jpg" alt="" width="300" height="200"></li>
+                            <li onclick="collapse('img-4');"><img src="tajmahal.jpg" alt="" width="300" height="200"></li>
+                            <li onclick="collapse('img-5');"><img src="yellowstone.jpg" alt="" width="300" height="200"></li>
+                            <li onclick="collapse('img-6');"><img src="colosseum.jpg" alt="" width="300" height="200"></li>
+                        </ul>
+                        <br>
+                        <div class="thumbnail-info">
+                            <div class="img-des tab-content" id="img-1"  style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="temple.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2 style="text-align: center;">Temple of the Tooth</h2>
+                                        <p style="text-align: center;">The Temple of Tooth at the final location of the Sacred Kandy is Tooth (Left Canine) 
+                                            of the Buddha, which was brought to Sri Lanka during the reign of King Kirtisri 
+                                            Megahavanna (301-328) by Prince Danta and Princess Hemamala from the kingdom of Kalinga, India. 
+                                            It became the paladium of the Sri Lankan Kings and was preciously guarded in a special Shrine built 
+                                            within the precincts of the royal palace, wherever the capital was located.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-des tab-content" id="img-2"  style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="eiffel.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2  style="text-align: center;">Eiffel Tower</h2>
+                                        <p style="text-align: center;">The Eiffel Tower, La Tour Eiffel in French, was the main exhibit of the Paris Exposition â€” or World's Fair â€” 
+                                            of 1889. It was constructed to commemorate the centennial of the French Revolution and to demonstrate France's 
+                                            industrial prowess to the world.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-des tab-content" id="img-3"  style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="louvre.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2 style="text-align: center;">Louvre Museum</h2>
+                                        <p style="text-align: center;">The Louvre, or the Louvre Museum, is the world's largest art museum and a historic monument in Paris, France, 
+                                            and is best known for being the home of the Mona Lisa. A central landmark of the city, it is located on the 
+                                            Right Bank of the Seine in the city's 1st arrondissement. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-des tab-content" id="img-4"  style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="tajmahal.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2 style="text-align: center;">Taj Mahal</h2>
+                                        <p style="text-align: center;">An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan 
+                                            in memory of his favourite wife, the Taj Mahal is the jewel of Muslim art in India and one of the universally admired 
+                                            masterpieces of the world's heritage. The Taj Mahal is located on the right bank of the Yamuna River in a vast Mughal 
+                                            garden that encompasses nearly 17 hectares, in the Agra District in Uttar Pradesh.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-des tab-content" id="img-5" style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="yellowstone.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2 style="text-align: center;">Yellowstone National Park</h2>
+                                        <p style="text-align: center;">Yellowstone National Park is a nearly 3,500-sq.-mile wilderness recreation area atop a volcanic hot spot. Mostly in Wyoming, 
+                                            the park spreads into parts of Montana and Idaho too. Yellowstone features dramatic canyons, alpine rivers, lush forests, 
+                                            hot springs and gushing geysers, including its most famous, Old Faithful. It's also home to hundreds of animal species, 
+                                            including bears, wolves, bison, elk and antelope</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-des tab-content" id="img-6"  style="display: none;">
+                                <div class="blog-content">
+                                    <div class="img">
+                                        <img src="colosseum.jpg" alt="" width="500" height="300" >
+                                    </div>
+                                    <div>
+                                        <h2 style="text-align: center;">The Colosseum</h2>
+                                        <p style="text-align: center;">Colosseum, also called Flavian Amphitheatre, giant amphitheatre built in Rome under the Flavian emperors. Construction of 
+                                            the Colosseum was begun sometime between 70 and 72 CE during the reign of Vespasian. It is located just east of the Palatine Hill, 
+                                            on the grounds of what was Neroâ€™s Golden House. The artificial lake that was the centrepiece of that palace complex was drained, 
+                                            and the Colosseum was sited there, a decision that was as much symbolic as it was practical. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div style="margin-top: 500px;">
+                <div class="footer">
+                    <div class="footer-content">
+                        <div class="footer-section about">
+                                <br><h2>About Us </h2><br>
+                                <p>TROUVAILLE TRAVELLERS has been the pioneers of tourism since 1990 <br>
+                                We have been providing our customers a finest service and<br>
+                                help  them find the best holdiday solution for them. </p>
+                                
+                        </div>
+
+                       
+                            <div class="footer-section phone">
+                                <br><h2>Reach Us</h2>
+                                <br>
+                                <address>
+                                    <p > trouvailletravelllers90@gmail.com</p>
+                                    <br>
+                                    <p >Tel:011-2247896<br>  077-8866255</p>
+                
+                                </address>
+                                
+                                <img src="3.png" alt="FOOTER" width="140" height="55">
+                            </div>
+                        
+                
+
+                        <div class="footer-section quicklinks">
+                            <br>
+                            <h2>Quick links  </h2>
+                            <br>
+                            <ul>
+                                <li><a href="https://w1809936.users.ecs.westminster.ac.uk/navbar.html">Home</a></li>		<!--home page :going up-->
+                                <li><a href="https://w1809852.users.ecs.westminster.ac.uk/public_html/public_html/shop.html">Shop</a></li>    	 <!--shop page-->  
+                                <li><a href="https://w1809748.users.ecs.westminster.ac.uk/Student_Details.html">Team</a></li> 		<!--about us page-->
+                                <li><a href="https://w1809936.users.ecs.westminster.ac.uk/query.html">Contact us</a></li>	<!--query-->
+                                <li><a href="https://w1809748.users.ecs.westminster.ac.uk/Quiz%20Intro.html">Quiz</a></li>		<!--quiz page-->
+				                <li><a href="https://w1809851.users.ecs.westminster.ac.uk/WebDesign_Thumbnail_page.html">Thumbnails</a></li>
+                                <li><a href="https://w1809851.users.ecs.westminster.ac.uk/WebDesign_Sitemap_page.html">Sitemap</a></li>	<!--sitemap svg page-->
+                            </ul>
+                        </div>
+                    
+                    </div>
+                
+            
+                
+                    <div class="footer-bottom">
+                        &copy;trouvailletravelllers.com | Designed by CLAUDIA W.    <a href = "page_editor_student4.html">Page Developer</a>
+                    </div>
+                </div>
+            </div>
+        
+    </body>
+    </html>
